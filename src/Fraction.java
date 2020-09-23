@@ -1,30 +1,30 @@
 public class Fraction {
 
-    private float numerateur;
-    private float denominateur;
-    private float fraction;
+    private int numerateur;
+    private int denominateur;
+    private int fraction;
 
-    public Fraction(float numerateur,float denominateur) {
+    public Fraction(int numerateur,int denominateur) {
+        //assert denominateur == 0 : "Une fraction ne peut pas avoir 0 comme dénominateur";
         this.numerateur = numerateur;
         this.denominateur = denominateur;
         this.fraction = this.numerateur/this.denominateur;
     }
 
-    public float getFraction() {
+    public int getFraction() {
         return fraction;
     }
 
-    public float getDenominateur() {
+    public int getDenominateur() {
         return denominateur;
     }
 
-    public float getNumerateur() {
+    public int getNumerateur() {
         return numerateur;
     }
 
     public String toString() {
-        return this.numerateur+"/"+this.denominateur+" = "+this.fraction;
+        return "" + this.fraction;
+        //return this.numerateur+"/"+this.denominateur+" = "+this.fraction;
     }
-
-
 }
