@@ -5,7 +5,6 @@ public class Fraction {
     private int fraction;
 
     public Fraction(int numerateur,int denominateur) {
-        //assert denominateur == 0 : "Une fraction ne peut pas avoir 0 comme dénominateur";
         this.numerateur = numerateur;
         this.denominateur = denominateur;
         this.fraction = this.numerateur/this.denominateur;
@@ -24,7 +23,7 @@ public class Fraction {
     }
 
     public String toString() {
-        return "" + this.fraction;
-        //return this.numerateur+"/"+this.denominateur+" = "+this.fraction;
+        //return "" + this.fraction;
+        return this.numerateur+"/"+this.denominateur+" = "+this.fraction;
     }
 }
